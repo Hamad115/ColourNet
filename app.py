@@ -123,7 +123,7 @@ output_layer = Conv2D(2, (1, 1), activation='tanh')(decoder)
 model = Model(input_layer, output_layer)
 model.compile(Adam(lr=0.0002), loss='mse', metrics=['accuracy'])
 
-model.load_weights('/Users/hamadsultan/Downloads/ColourNet/saved_model_weights.h5')
+model.load_weights('saved_model_weights.h5')
 
 st.title('ColourNet')
 
